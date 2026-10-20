@@ -6,11 +6,16 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class GitHubUserStatistics {
-    public static final String USER_NAME = System.getProperty("github.user", "octocat");
+    public static final String milka5 = System.getProperty("github.user", "octocat");
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         String username = (args != null && args.length > 0) ? args[0] : USER_NAME;
         String apiUrl = "https://api.github.com/users/" + USER_NAME;
+=======
+        String username = (args != null && args.length > 0) ? args[0] : milka5;
+        String apiUrl = "https://api.github.com/users/" + username;
+>>>>>>> 43b44d0 (Fix USER_NAME error in milka5/GitHubUserStatistics.java)
 
         try {
             URL url = new URL(apiUrl);
