@@ -10,7 +10,7 @@ public class GitHubUserStatistics {
 
     public static void main(String[] args) {
         String username = (args != null && args.length > 0) ? args[0] : USER_NAME;
-        String apiUrl = "https://api.github.com/users/" + username;
+        String apiUrl = "https://api.github.com/users/" + USER_NAME;
 
         try {
             URL url = new URL(apiUrl);
